@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{23D6DAB5-A742-4930-8EE3-C654B4AAC298}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ODMSinavYazilimi</RootNamespace>
+    <AssemblyName>ODMSinavYazilimi</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>packages\ExcelDataReader.DataSet.3.6.0\lib\net35\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormABKitapcik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormABKitapcik.Designer.cs">
+      <DependentUpon>FormABKitapcik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAna.Designer.cs">
+      <DependentUpon>FormAna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDegerlendirme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDegerlendirme.Designer.cs">
+      <DependentUpon>FormDegerlendirme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDersler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDersler.Designer.cs">
+      <DependentUpon>FormDersler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKutukIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKutukIslemleri.Designer.cs">
+      <DependentUpon>FormKutukIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManuelSinavlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManuelSinavlar.Designer.cs">
+      <DependentUpon>FormManuelSinavlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPdfCkOlustur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPdfCkOlustur.Designer.cs">
+      <DependentUpon>FormPdfCkOlustur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSorular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSorular.Designer.cs">
+      <DependentUpon>FormSorular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTxtOlustur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTxtOlustur.Designer.cs">
+      <DependentUpon>FormTxtOlustur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Library\Bellek.cs" />
+    <Compile Include="Library\DizinIslemleri.cs" />
+    <Compile Include="Library\Enums.cs" />
+    <Compile Include="Library\ExcelUtil.cs" />
+    <Compile Include="Library\GenelIslemler.cs" />
+    <Compile Include="Library\JsonJsonOperations.cs" />
+    <Compile Include="Library\KalanSure.cs" />
+    <Compile Include="Library\ListContains.cs" />
+    <Compile Include="Library\MoreEnumerable.cs" />
+    <Compile Include="Library\PdfIslemleri.cs" />
+    <Compile Include="Library\Degerlendirme.cs" />
+    <Compile Include="Library\SinavBranslar.cs" />
+    <Compile Include="Library\TestPuanHesaplamaIslemleri.cs" />
+    <Compile Include="Models\AktifDonemSinavlar.cs" />
+    <Compile Include="Models\ComboboxItem.cs" />
+    <Compile Include="Models\OgrDogruYanlisSayilariModel.cs" />
+    <Compile Include="Models\OgrenciCevapModel.cs" />
+    <Compile Include="Models\OgrenciExcelModel.cs" />
+    <Compile Include="Models\OpaqKontrol.cs" />
+    <Compile Include="Models\ResultList.cs" />
+    <Compile Include="Models\SinavOturumModel.cs" />
+    <Compile Include="Models\SinifSube.cs" />
+    <Compile Include="Models\SoruSiralari.cs" />
+    <Compile Include="Models\TestBransInfo.cs" />
+    <Compile Include="Models\TestDonemInfo.cs" />
+    <Compile Include="Models\TestIlcePuanInfo.cs" />
+    <Compile Include="Models\TestKutukInfo.cs" />
+    <Compile Include="Models\TestOgrCevapInfo.cs" />
+    <Compile Include="Models\TestOgrPuanInfo.cs" />
+    <Compile Include="Models\TestOkulPuanInfo.cs" />
+    <Compile Include="Models\TestOturumlarInfo.cs" />
+    <Compile Include="Models\TestSinavlarInfo.cs" />
+    <Compile Include="Models\TestSorularInfo.cs" />
+    <Compile Include="Models\OturumBirlestir.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormABKitapcik.resx">
+      <DependentUpon>FormABKitapcik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAna.resx">
+      <DependentUpon>FormAna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDegerlendirme.resx">
+      <DependentUpon>FormDegerlendirme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDersler.resx">
+      <DependentUpon>FormDersler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKutukIslemleri.resx">
+      <DependentUpon>FormKutukIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManuelSinavlar.resx">
+      <DependentUpon>FormManuelSinavlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPdfCkOlustur.resx">
+      <DependentUpon>FormPdfCkOlustur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSorular.resx">
+      <DependentUpon>FormSorular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTxtOlustur.resx">
+      <DependentUpon>FormTxtOlustur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Json\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="manuelsinavekleme.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

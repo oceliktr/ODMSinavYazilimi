@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="label5.Text" xml:space="preserve">
+    <value>İçerisinde birden fazla oturuma ait verisi olan text dosyaları için öncelikle bu ekranda birleştirme yapılmalıdır. Kesme noktarını OpaqId, Oturum No, KitapçıkTürü ve Cevaplar olarak seçiniz ve 'Oturum Verilerini Birleştir' butonuna tıklayınız.
+Örnek: OpaqId#Oturum#KTür#Cevaplar
+Sonuç olarak çıkan text dosyası OpaqId#kitapçık türleri#ilkoturum#sonraki oturum#... şeklinde birleştirilecektir. Kitapçık türleri oturum sırasına göre dizilmiştir.
+</value>
+  </data>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnEkle.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAsBJREFUSEvt
+        Vd9LU2EYdlcHdv6Es6OdLr3pws2dc8pSqOZm23RqRaY2f4zcSosdy0AtwbS6WeXZJEIwIggjS8pKzSxM
+        Ios64u8oyiz1dv4B39v3jhNMRMHjZT3w8D57vud9X86+cZbyH9tGtGe/qeGqzCitklm5LLEJom6VGLUn
+        x6THjENpyWYPh1LDJQqnHle4GK1R1OgpLftYPWYcbp/IdQylrn5YqIVPP88liJp6cU+hyOkx46BDhM7X
+        PMyuBMjMSgBmlqsJ6s4RnniKREGPGQcu6BjmYZoOpqS1CivpeMkT71YXtHftNdU0SGxegZ1zF9oFHC7J
+        GVnXB3mYWqqCyaXKBFFHBnjAM1yCObfPztU27WGv3c3a+OKDF2TGU5kWbu1Ni0depEPkeTpBdo/KMPk7
+        SLRfftAW/QR196hEkjPY46a9p5vtjD5uPegCc36NRR2aPkLmVhphdrmRIKeWztLBVeTzYjm95HKiLVaj
+        tyZDe8B70qKearab9XHrQRew7oAl9lRzkY8LpUCJNVkne2s+92suoL3RUJN9458uLnBV8rEH4wfgzZfi
+        LRF7sDfUJG66wOzw8+rDcScZ/1EB77/7CXLsWwmMzBeT4TkfDM/6COq3X0vWZGgPOE7waqhxk6+o7qLM
+        5BzdEQ51WuL1d3bCX7Y/2gWv5othcMYLA5So0UvO0J5V7K29JG18yW23c0zViszmemyc02sTXPmZgihl
+        ZAVvcfBsykP6Jw8BJUFNPYJnroLMRI7muWDDbratK3tr7ydnvk0IRDl4MpFH+iZc0Kc5CWrqERyux4wj
+        lz5JxU0OHk84oVdzJIgaPXxKPWYcB91W7tgVLn5vLI/cf+cFSoIaPYfHuv2XXVmdlRW9QlguSlXlorQY
+        rUgVvVJ6pseM4/wN0eSvtzJlZzLMlKxO1IwSsW3/D+dfR0rKH0QI2goX/tzNAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="blAciklama.Text" xml:space="preserve">
+    <value>'Data Aç' butonu ile *.txt veya *.dat dosyasını seçiniz. Modül ilk satırı örnek olarak gösterecektir.
+Oluşturmak istediğiniz format için her grup arasına kullanacağınız ara karakteri de girerek başlangıç noktasını ve karakter sayısını seçip ekle butonuna tıklayınız.
+Katılım Durumu ('G') alanı için açıklama alanına 'Girmedi' yazınız. Modül girmeyenler için 0, girenler için 1 değerini atayacaktır.
+İstenilen formatı örnekte görüldüğü gibi oluşturduktan sonra 'Text Oluştur' butonuna tıklayınız.
+----Bu uygulama için aşağıdaki formatta txt oluşturunuz.---
+20649649#2#A#CBBBBBACACBABCBAACAB#2#A#CBBBBBACACBABCBAACAB
+OpaqId/TC#DersKodu#KitTur#Cevaplar#DersKodu#KitTur#Cevaplar</value>
+  </data>
+  <data name="btnDataAc.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHZSURBVDhPpdPfS5NRHMfxTzfhXV0lBHXRHzDoPyjw
+        V1QIXtRVF7FIkKgEKYIo15pZ1nRZ5CSxRj/80WxqGQVCjVLmrAuLNkfb1NCcjz26+Zg63T59D4uuBj3S
+        xevqnPc533NxQPK/YORafqP1sAhbHha1HqjLUZutwp5PJpulvrzMqKZxfyBLy4DBP2vWvwcMO+Cg4SOT
+        XmYXu5nRO7kx/5Trc4+ZnvVwbeYBV7+3cWWylb/iLVyZcFM1QrXAezvqVZzRnnAj8YjrPzxMT7dLdD8X
+        xe7R+HaHS+MuJkNOGpFmqkbkJnhnQ4O62Uy8+KWBS+EmqkaegaDA4GU41cgJ/wlOvSzn1IvDnOw/xIm+
+        g4z3HmDcV8ZYTymj3mJGnxUx3lPCoasYltgmjuPNRdw2oo2cfmtlWu8wbSFcF/tgRzUGLuDu7EgNlZSM
+        lww1/lMq7GKkt9wv05eg7xzcIV8F58cc1Meum5KUi/zOPV3957EL3hq0BR8WceHzDWof7SbZUh1n0Nxd
+        jS3oPAvPp64j1IK1TAQumfL1+dFx90mcFkBrJXyRV1X8OXrFFF0meH1rb+BUGfZJDlSVwnXzGAY3Q5oW
+        SXeL7eqMrWKH2LkJhWKbKMj7Rc0jfgPdA4hcbxbnbAAAAABJRU5ErkJggg==
+</value>
+  </data>
+</root>
