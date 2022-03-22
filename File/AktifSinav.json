@@ -1,0 +1,35 @@
+﻿{
+  "DonemInfo": {
+    "Id": 3,
+    "Donem": "2021-2022 Eğitim Öğretim Yılı",
+    "Aktif": 1,
+    "VeriGirisi": 0
+  },
+  "Sinavlar": [
+    {
+      "Id": 29025,
+      "DonemId": 3,
+      "Sinif": 8,
+      "Puanlama": 500,
+      "SinavAdi": "Şenkaya KDS Sınavı Aralık 2021",
+      "Aktif": 1,
+      "Manuel": 1
+    }
+  ],
+  "Oturumlar": [
+    {
+      "Id": 82372,
+      "SinavId": 29025,
+      "SiraNo": 1,
+      "Sure": 0,
+      "OturumAdi": "Sözel"
+    },
+    {
+      "Id": 27688,
+      "SinavId": 29025,
+      "SiraNo": 2,
+      "Sure": 0,
+      "OturumAdi": "Sayısal"
+    }
+  ]
+}
