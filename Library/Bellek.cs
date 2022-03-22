@@ -14,7 +14,7 @@ namespace ODMSinavYazilimi.Library
         public static string AktifDonemveSinavlarUrl = "http://erzurumodm.meb.gov.tr/Kutuphaneler/AktifSinav.ashx";
         public static string AktifDonemveSinavlarFilename = Dizin + "\\AktifSinav.json";
 
-        public static string BranslarUrl = "http://erzurumodm.meb.gov.tr/Kutuphaneler/Branslar.ashx?api=652136B973556CB86B07F3A2E4A5AEB5";
+        public static string BranslarUrl = "http://erzurumodm.meb.gov.tr/Kutuphaneler/Branslar.ashx?api=[APICODE]";
         public static string BranslarFilename = Dizin + "\\Branslar.json";
 
         public static string KutukFileNameGet(int sinavId, int sinif)
@@ -23,7 +23,7 @@ namespace ODMSinavYazilimi.Library
         }
         public static string KutukUrlGet(int donemId, int sinif)
         {
-            return string.Format("http://erzurumodm.meb.gov.tr/Kutuphaneler/KutukList.ashx?donem={0}&sinif={1}&api=652136B973556CB86B07F3A2E4A5AEB5", donemId, sinif);
+            return string.Format("http://erzurumodm.meb.gov.tr/Kutuphaneler/KutukList.ashx?donem={0}&sinif={1}&api=[APICODE]", donemId, sinif);
         }
         public static string SorularFileNameGet(int sinavId)
         {
@@ -31,7 +31,7 @@ namespace ODMSinavYazilimi.Library
         }
         public static string SorularUrlGet(int sinav)
         {
-            return string.Format("http://erzurumodm.meb.gov.tr/Kutuphaneler/Sorular.ashx?api=652136B973556CB86B07F3A2E4A5AEB5&sinav={0}", sinav);
+            return string.Format("http://erzurumodm.meb.gov.tr/Kutuphaneler/Sorular.ashx?api=[APICODE]&sinav={0}", sinav);
         }
         public static string ABKitapcikSorularFileNameGet(int sinavId)
         {
